@@ -56,6 +56,13 @@ func maxVowels(s string, k int) int {
 	return maxR
 }
 
+// 定长滑窗套路
+// 我总结成三步：入-更新-出。
+
+// 入：下标为 i 的元素进入窗口，更新相关统计量。如果 i<k−1 则重复第一步。
+// 更新：更新答案。一般是更新最大值/最小值。
+// 出：下标为 i−k+1 的元素离开窗口，更新相关统计量。
+
 func main() {
 	fmt.Println(maxVowels("abciiidef", 3))    // 3
 	fmt.Println(maxVowels("aeiou", 2))        // 2
