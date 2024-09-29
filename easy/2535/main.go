@@ -24,6 +24,8 @@ func differenceOfSum(nums []int) int {
 }
 
 func main() {
-	fmt.Println(differenceOfSum([]int{1, 15, 6, 3})) // 9                                // 2 	// 1
-	fmt.Println(differenceOfSum([]int{1, 2, 3, 4}))  // 0                              // 2 	// 1
+	// 9
+	fmt.Println(differenceOfSum([]int{1, 15, 6, 3}))
+	// 0
+	fmt.Println(differenceOfSum([]int{1, 2, 3, 4}))
 }
